@@ -1,1 +1,195 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Computer Vision – 3D Reconstruction from Images</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; max-width: 900px; margin: auto; }
+    h1, h2, h3 { color: #333; }
+    h1 { font-size: 2em; }
+    h2 { margin-top: 1.5em; }
+    ul { margin-left: 20px; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { margin: 2em 0; }
+</style>
+</head>
+<body>
+
+<h1>🧠 Computer Vision: 3D Reconstruction from Images</h1>
+
+<p><strong>Instructor:</strong> Tiago Novello<br>
+<strong>Contributors:</strong> Daniel Perazzo, Vitor Pereira Matias<br>
+<strong>Institution:</strong> Visgraf - IMPA<br>
+<strong>Semester:</strong> 2025</p>
+
+<hr>
+
+<h2>🎯 Objective</h2>
+<p>The goal of this course is to compute geometric and semantic properties of the three-dimensional world from digital images.</p>
+
+<hr>
+
+<h2>📝 Assignments</h2>
+<ul>
+<li>Programming exercises</li>
+<li>Reading/writing assignments</li>
+<li>Project development</li>
+<li>Students will present their work in the <strong>Computer Graphics Seminar</strong></li>
+</ul>
+
+<hr>
+
+<h2>📅 Schedule</h2>
+
+<h3>Basics</h3>
+<ul>
+<li><strong>Aug 12</strong> — Introduction</li>
+<li><strong>Aug 14</strong> — 3D reconstruction from images using machine learning</li>
+</ul>
+
+<h3>Scene Representation</h3>
+<ul>
+<li><strong>Aug 19</strong> — Surfaces [do Carmo], point clouds, oriented point clouds, meshes</li>
+<li><strong>Aug 21</strong> — Implicit surfaces, voxels, SDFs, marching cubes
+    <ul><li>Implement marching squares using primitives</li></ul>
+</li>
+</ul>
+
+<h3>Image Formation</h3>
+<ul>
+<li><strong>Aug 26</strong> — Geometric image formation (orthographic and perspective cameras)
+    <ul>
+        <li>Implement camera model</li>
+        <li>Compute point cloud from RGBD</li>
+        <li>Point cloud rasterization</li>
+    </ul>
+</li>
+<li><strong>Aug 28</strong> — Photometric image formation (Plenoptic function, Rendering equation)</li>
+</ul>
+
+<h3>Classical SfM</h3>
+<ul>
+<li><strong>Sep 2</strong> — Feature extraction (Harris, SIFT, etc.)
+    <ul><li>Explore feature extractor</li></ul>
+</li>
+<li><strong>Sep 4</strong> — Optical flow, feature matching, RANSAC
+    <ul><li>Panoramic stitching</li></ul>
+</li>
+<li><strong>Sep 9</strong> — Two-view SfM [Zisserman]
+    <ul><li>Reconstruct scene points with/without known camera positions</li></ul>
+</li>
+<li><strong>Sep 11</strong> — Two-view SfM (continued)</li>
+<li><strong>Sep 16</strong> — Multi-frame SfM (Bundle adjustment)</li>
+</ul>
+
+<h3>🧠🧱🚜 Implicit Neural Representations</h3>
+<ul>
+<li><strong>Sep 18</strong> — Implicit neural representations (INRs)</li>
+<li><strong>Sep 23</strong> — 3D reconstruction from point clouds (SIREN, IGR, i3D)
+    <ul>
+        <li>Fit a SIREN to an image</li>
+        <li>Extract features with autograd</li>
+    </ul>
+</li>
+<li><strong>Sep 25</strong> — Volume rendering (ODEs, volume eq., quadrature) [Max]</li>
+</ul>
+
+<h3>🟡🌐🫧 Neural Radiance Fields (NeRF)</h3>
+<ul>
+<li><strong>Sep 30</strong> — NeRFs
+    <ul><li>Implement tiny volume renderer from a density function</li></ul>
+</li>
+<li><strong>Oct 2</strong> — NeRFs (continued)
+    <ul><li>Implement a tiny NeRF</li></ul>
+</li>
+</ul>
+
+<h3>🌐🫒🫧 Gaussian Splatting</h3>
+<ul>
+<li><strong>Oct 7</strong> — <em>TBA</em></li>
+<li><strong>Oct 9</strong> — Volume splatting</li>
+<li><strong>Oct 14</strong> — 3D Gaussian splatting (3DGS)</li>
+<li><strong>Oct 16</strong> — 3DGS (continued)
+    <ul><li>Implement a tiny 3DGS / 2DGS</li></ul>
+</li>
+</ul>
+
+<h3>⚡️ Feed-forward 3D Reconstruction</h3>
+<ul>
+<li><strong>Oct 21</strong> — PF-LRM, noposplat
+    <ul><li>Visual transformers (ViT), DINOv2</li></ul>
+</li>
+<li><strong>Oct 23</strong> — Feed-forward continued</li>
+<li><strong>Oct 28</strong> — <em>Holiday</em></li>
+<li><strong>Oct 30</strong> — Monocular depth estimation (e.g., Depth Anything)</li>
+</ul>
+
+<h3>🧩 Segmentation & Tracking</h3>
+<ul>
+<li><strong>Nov 4</strong> — Segmentation (e.g., Segment Anything)</li>
+<li><strong>Nov 6</strong> — Feature tracking
+    <ul><li><em>(TODO: choose paper)</em></li></ul>
+</li>
+</ul>
+
+<h3>🧪 Projects (in progress)</h3>
+<ul>
+<li><strong>Nov 11</strong> — Project 1: Classic vision</li>
+<li><strong>Nov 13</strong> — Project 2: NeRF
+    <ul><li>Use different architectures</li></ul>
+</li>
+<li><strong>Nov 18</strong> — Project 3: 3DGS
+    <ul><li>Regularize with monocular depth</li></ul>
+</li>
+<li><strong>Nov 20</strong> — <em>Holiday</em></li>
+<li><strong>Nov 25</strong> — Project 4: Feed-forward
+    <ul>
+        <li>Initialize NeRF/3DGS with Dust3R, noposplat, VGGT, etc.</li>
+        <li>Can we replace COLMAP?</li>
+    </ul>
+</li>
+<li><strong>Nov 27</strong> — Project 5: Generative</li>
+</ul>
+
+<hr>
+
+<h2>📚 References</h2>
+
+<h3>🎓 Lectures</h3>
+<ol>
+<li>Silvio Savarese – <em>Computer Vision, From 3D Perception to 3D Reconstruction and beyond</em></li>
+<li>Andreas Geiger – <em>Computer Vision</em></li>
+<li>Shree Nayar – <em>First Principles of Computer Vision</em></li>
+</ol>
+
+<h3>📘 Books</h3>
+<ol start="4">
+<li>do Carmo – <em>Differential Geometry of Curves and Surfaces</em></li>
+<li>Hartley &amp; Zisserman – <em>Multiple View Geometry in Computer Vision</em></li>
+<li>Richard Szeliski – <em>Computer Vision: Algorithms and Applications</em></li>
+<li>Torralba et al. – <em>Foundations of Computer Vision</em></li>
+</ol>
+
+<h3>🧾 Papers</h3>
+<ol start="8">
+<li>Max, Nelson – <em>Optical Models for Direct Volume Rendering</em> (TVCG 2002)</li>
+</ol>
+
+<h3>🌐 Additional Links</h3>
+<ul>
+<li><a href="https://web.stanford.edu/class/cs231a/syllabus.html">Stanford CS231A</a></li>
+<li><a href="https://uni-tuebingen.de/.../computer-vision">Tübingen Computer Vision</a></li>
+<li><a href="https://fpcv.cs.columbia.edu">Columbia FPCV</a></li>
+<li><a href="https://www.r-5.org/.../Multiple_View_Geometry...">Zisserman Book PDF</a></li>
+<li><a href="https://szeliski.org/Book/">Szeliski Book Online</a></li>
+<li><a href="https://visionbook.mit.edu">MIT Vision Book</a></li>
+</ul>
+
+<hr>
+
+<p><em>Made with ❤️ by Visgraf @ IMPA</em></p>
+
+</body>
+</html>
