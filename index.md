@@ -3,7 +3,7 @@ title: "Computer Vision – 3D Reconstruction from Images"
 layout: default
 ---
 
-# 🧠 Computer Vision: 3D Reconstruction from Images
+# Computer Vision: 3D Reconstruction from Images
 
 **Author:** Tiago Novello  
 **Mentors:** Daniel Perazzo, Vitor Pereira Matias, Diana Aldana?  
@@ -92,7 +92,7 @@ Study classical and learning-based methods for 3D reconstruction, with hands-on 
 
 ---
 
-## 🧪 Projects (WiP)
+## Projects (WiP)
 
 - **Nov 11** — Project 1 [TBD ?]  
 - **Nov 13** — Project 2: NeRF with different architectures (FFN, SIREN, TUNER, FINER)  
