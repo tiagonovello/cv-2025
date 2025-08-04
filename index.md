@@ -22,10 +22,10 @@ Study classical and learning-based methods for 3D reconstruction, with hands-on 
 ## 📝 Assignments
 
 - Programming, reading, and writing exercises
-- Project development following Role and play presentations
-- Literature review and problem setup (using Role-Playing Paper-Reading …)
-- Iterative development with mentor feedback
-- Final presentation at the CG Seminar
+- Project development
+  - Literature review and problem setup (using Role-Playing Paper-Reading …)
+  - Iterative development with mentor feedback
+  - Final presentation at the CG Seminar
 
 ---
 
@@ -36,18 +36,18 @@ Study classical and learning-based methods for 3D reconstruction, with hands-on 
 - **Aug 14** — 3D reconstruction from images using machine learning  
 
 ### Scene Representation
-- **Aug 19** — Surfaces \[do Carmo\], point clouds, oriented point clouds, meshes  
+- **Aug 19** — Surfaces, (oriented) point clouds, meshes  
 - **Aug 21** — Implicit surfaces, voxels, SDFs, marching cubes  
   - Implement marching squares using basic primitives  
 
 ### Image Formation
-- **Aug 26** — Geometric image formation (Camera models: orthographic and perspective)  
+- **Aug 26** — Geometric image formation (Camera models)  
   - Implement camera model  
   - Given an RGBD image, compute its point cloud  
   - Implement point cloud rasterization  
-- **Aug 28** — Photometric image formation (Plenoptic function, rendering equation)
+- **Aug 28** — Photometric image formation (Rendering equation)
 
-### Classic 3D Reconstruction: Structure-from-Motion (SfM) \[Szeliski\]
+### Classic 3D Reconstruction: Structure-from-Motion (SfM)
 - **Sep 2** — Feature extraction (Harris corner detection, SIFT, …)  
   - Exercise: explore some feature extractor  
 - **Sep 4** — Optical flow, feature matching, RANSAC  
@@ -124,4 +124,3 @@ Study classical and learning-based methods for 3D reconstruction, with hands-on 
 
 ---
 
-_Made with ❤️ by Visgraf @ IMPA_
