@@ -7,8 +7,9 @@ layout: default
 
 **Author:** Tiago Novello  
 **Mentors:** Daniel Perazzo, Vitor Pereira Matias, Diana Aldana?  
-**Institution:** Visgraf - IMPA  
-**Date:** Aug 3, 2025
+**Visgraf - IMPA**  
+**Date:** Aug 3, 2025  
+[Subscribe here!](https://institucional.impa.br/pub/login.action)
 
 ---
 
